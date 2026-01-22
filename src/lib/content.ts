@@ -127,4 +127,13 @@ export const CONTENT = {
         { question: "How much time does a pilot take?", answer: "We need about 1 hour of setup time and your course materials. We handle the heavy lifting of mapping." },
         { question: "Is the AI grading student work?", answer: "Caliber helps generate questions and provides preliminary feedback, but the instructor is always in the loop for final grading and review." },
     ],
+    story: {
+        title: "Our Story",
+        subtitle: "Building the tools we wished we had.",
+        content: [
+            "UCSB Caliber started with a simple observation: course planning and student practice were disconnected. Instructors spent hours creating materials, and students spent hours practicing, but the link between *what was taught* and *what was practiced* was often lost in translation.",
+            "Professor Diba Mirza and a team of dedicated Computer Science students came together to bridge this gap. We realized that by mapping learning outcomes directly to assignments, we could create a system where practice is always purposeful and instructors have clear visibility into student mastery.",
+            "Today, Caliber is being built and tested right here at UCSB, designed by the very people who use it every day.",
+        ],
+    },
 };
