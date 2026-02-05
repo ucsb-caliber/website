@@ -108,7 +108,7 @@ export const CONTENT = {
             // Leadership
             {
                 name: "Dr. Diba Mirza",
-                role: "Faculty",
+                role: "Faculty Advisor",
                 image: "/team/diba-mirza.png",
                 bio: "Teaching Professor and Vice Chair"
             },

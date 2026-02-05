@@ -6,7 +6,7 @@ export default function TeamPage() {
     const allMembers = CONTENT.team.members;
 
     const leadership = allMembers.filter(m =>
-        m.role === "Faculty" ||
+        m.role === "Faculty Advisor" ||
         m.role === "Graduate Student Mentor" ||
         m.role === "Team Lead" ||
         m.role === "Development Team Lead"
@@ -92,8 +92,8 @@ function TeamMemberCard({ member, size = "small" }: TeamMemberCardProps) {
                 "font-bold text-slate-900",
                 isLarge ? "text-lg" : "text-base"
             )}>{member.name}</h3>
-            <p className="text-aurora-blue font-bold text-[9px] mb-2 uppercase tracking-widest">{member.role}</p>
-            {isLarge && <p className="text-slate-600 leading-relaxed text-xs max-w-xs">{member.bio}</p>}
+            <p className="text-aurora-blue font-bold text-[9px] mb-1 uppercase tracking-widest">{member.role}</p>
+            {isLarge && <p className="text-aurora-blue font-bold leading-relaxed text-xs max-w-xs">{member.bio}</p>}
         </div>
     );
 }
