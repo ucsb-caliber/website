@@ -5,7 +5,7 @@ export function MVPBanner() {
     return (
         <section className="py-24 relative overflow-hidden">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-                <div className="bg-white/20 backdrop-blur-xl rounded-2xl p-6 md:p-10 flex flex-col md:flex-row items-center gap-8 border border-slate-200 shadow-xl">
+                <div className="bg-white rounded-2xl p-6 md:p-10 flex flex-col md:flex-row items-center gap-8 border border-slate-100 shadow-xl">
                     <div className="flex-shrink-0">
                         <div className="h-16 w-16 rounded-full bg-white flex items-center justify-center animate-pulse shadow-lg">
                             <Info className="h-8 w-8 text-aurora-blue" />
