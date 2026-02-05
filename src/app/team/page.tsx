@@ -1,5 +1,6 @@
 import { CONTENT } from "@/lib/content";
 import Image from "next/image";
+import { getAssetPath } from "@/lib/utils";
 
 export default function TeamPage() {
     return (
@@ -14,7 +15,7 @@ export default function TeamPage() {
                         <div key={i} className="group flex flex-col items-center text-center">
                             <div className="relative h-48 w-48 overflow-hidden rounded-full bg-slate-100 mb-6 border-4 border-white shadow-lg group-hover:scale-105 transition-transform duration-300 group-hover:shadow-xl group-hover:border-navy/10">
                                 <Image
-                                    src={member.image}
+                                    src={getAssetPath(member.image)}
                                     alt={member.name}
                                     fill
                                     className="object-cover"

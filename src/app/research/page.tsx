@@ -1,68 +1,37 @@
-import { CONTENT } from "@/lib/content";
+import { Navbar } from "@/components/layout/navbar";
+import { Footer } from "@/components/layout/footer";
+import RetroGrid from "@/components/ui/retro-grid";
 
 export default function ResearchPage() {
     return (
-        <article className="py-24 max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-            <header className="mb-12">
-                <p className="text-navy font-semibold uppercase tracking-wide mb-2">Pedagogy</p>
-                <h1 className="text-4xl font-bold text-slate-900 mb-6">Evidence-Based Instruction</h1>
-                <p className="text-xl text-slate-600 leading-relaxed">
-                    Caliber is built on the principles of Mastery Learning and Constructive Alignment, ensuring that assessments actually measure what was taught.
-                </p>
-            </header>
+        <main className="min-h-screen bg-white flex flex-col relative overflow-hidden">
+            <Navbar />
 
-            <div className="space-y-12 text-lg text-slate-700 leading-relaxed">
-                <section>
-                    <h2 className="text-2xl font-bold text-slate-900 mb-4">Bloom&apos;s Taxonomy Alignment</h2>
-                    <p className="mb-4">
-                        One of the hardest parts of creating exams is ensuring difficulty consistency. We use Large Language Models (LLMs) to classify every generated question against local standards based on Bloom&apos;s Revised Taxonomy.
-                    </p>
-                    <ul className="list-disc pl-5 space-y-2 marker:text-navy">
-                        <li><strong>Remember & Understand:</strong> retrieval practice.</li>
-                        <li><strong>Apply & Analyze:</strong> scenario-based problem solving.</li>
-                        <li><strong>Evaluate & Create:</strong> high-level synthesis tasks.</li>
-                    </ul>
-                </section>
+            <div className="flex-grow flex flex-col items-center justify-center relative px-4">
+                <RetroGrid className="opacity-10" />
 
-                <section>
-                    <h2 className="text-2xl font-bold text-slate-900 mb-4">The Mastery Loop</h2>
-                    <p>
-                        Traditional grading &quot;moves on&quot; whether the student learned the concept or not. Mastery learning halts progress on specific strands until competence is demonstrated. Caliber facilitates this by generating infinite variations of practice problems for specific skill tags until the student proves readiness.
-                    </p>
-                </section>
-
-                <section className="bg-slate-50 p-6 rounded-xl border-l-4 border-navy">
-                    <h3 className="font-bold text-slate-900 mb-2">Why It Matters</h3>
-                    <p className="text-slate-600 text-base">
-                        Research shows that 1-sigma improvement in student outcomes is possible when shifting from
-                        conventional instruction to mastery learning relative to control groups (Bloom, 1984).
-                    </p>
-                </section>
-
-                <section>
-                    <h2 className="text-2xl font-bold text-slate-900 mb-6">Research Log</h2>
-                    <div className="grid gap-6 md:grid-cols-2">
-                        {CONTENT.home.blog.map((post, index) => (
-                            <a
-                                key={index}
-                                href={post.slug}
-                                className="block p-6 bg-white rounded-xl border border-slate-200 hover:border-navy hover:shadow-lg transition-all group"
-                            >
-                                <div className="text-sm text-navy font-semibold mb-2 flex justify-between">
-                                    <span>{post.date}</span>
-                                    <span>{post.readTime}</span>
-                                </div>
-                                <h3 className="text-xl font-bold text-slate-900 mb-2 group-hover:text-navy transition-colors">
-                                    {post.title}
-                                </h3>
-                                <p className="text-slate-600">
-                                    {post.summary}
-                                </p>
-                            </a>
-                        ))}
+                <div className="relative z-10 text-center max-w-2xl mx-auto">
+                    <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-aurora-blue/5 border border-aurora-blue/20 mb-8 animate-fade-in">
+                        <span className="relative flex h-2 w-2">
+                            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-aurora-blue opacity-75"></span>
+                            <span className="relative inline-flex rounded-full h-2 w-2 bg-aurora-blue"></span>
+                        </span>
+                        <span className="text-[10px] font-bold text-aurora-blue uppercase tracking-widest">In Development</span>
                     </div>
-                </section>
+
+                    <h1 className="text-5xl md:text-7xl font-bold text-slate-900 tracking-tight mb-8">
+                        Research coming <span className="text-transparent bg-clip-text bg-gradient-to-r from-aurora-blue to-aurora-purple">soon.</span>
+                    </h1>
+
+                    <p className="text-xl text-slate-600 leading-relaxed font-medium mb-12">
+                        We are currently formalizing our findings on mastery-based learning and AI-assisted pedagogy at scale. Stay tuned for our whitepaper and case studies.
+                    </p>
+
+                    <div className="h-px w-24 bg-gradient-to-r from-transparent via-slate-200 to-transparent mx-auto"></div>
+                </div>
             </div>
-        </article>
+
+            <Footer />
+        </main>
     )
 }

@@ -3,7 +3,6 @@ export const CONTENT = {
         logo: "UCSB Caliber",
         links: [
             // { label: "Instructors", href: "/instructors" },
-            { label: "Product", href: "/product" },
             { label: "Research", href: "/research" },
             { label: "Team", href: "/team" },
         ],
@@ -22,8 +21,8 @@ export const CONTENT = {
             headline: "Bringing Intelligence to the Lecture Hall",
             subheadline: "Outcome mapping, assignment generation, and mastery tracking in one workflow",
             ctas: {
-                primary: "View Product",
-                primaryUrl: "/product",
+                primary: "Meet the Team",
+                primaryUrl: "/team",
             },
         },
         credibility: [

@@ -18,19 +18,9 @@ export function Footer() {
                     <div>
                         <h3 className="text-sm font-semibold text-slate-900 tracking-wider uppercase">Platform</h3>
                         <ul className="mt-4 space-y-4">
-                            {/* <li>
-                                <Link href="/instructors" className="text-base text-slate-400 hover:text-ucsb-gold">
-                                    Instructors
-                                </Link>
-                            </li> */}
                             <li>
-                                <Link href="/students" className="text-base text-slate-500 hover:text-aurora-blue transition-colors">
-                                    Students
-                                </Link>
-                            </li>
-                            <li>
-                                <Link href="/product" className="text-base text-slate-500 hover:text-aurora-blue transition-colors">
-                                    Product
+                                <Link href="/research" className="text-base text-slate-500 hover:text-aurora-blue transition-colors">
+                                    Research
                                 </Link>
                             </li>
                         </ul>
